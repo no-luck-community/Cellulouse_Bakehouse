@@ -58,12 +58,12 @@ function Header() {
     >
       <div className="max-w-[1600px] mx-auto flex items-center justify-between">
         
-        {/* Logo */}
-        <a href="#home" className="flex items-center gap-3 group">
-        <div className="w-13 h-14 rounded-full border border-[#f0d9b5]/30 flex items-center justify-center bg-[#18342f]/40 group-hover:border-[#f0d9b5] group-hover:bg-[#18342f]/60 transition-all duration-500">
-        <img src={logo} alt="Cellulouse Bakehouse Logo" className="w-full h-full object-cover rounded-full" />
+      {/* Logo */}
+      <a href="#home" className="flex items-center gap-3 group">
+      <div className="w-10 h-10 md:w-14 md:h-14 rounded-full border border-[#f0d9b5]/30 flex items-center justify-center bg-[#18342f]/40 group-hover:border-[#f0d9b5] group-hover:bg-[#18342f]/60 transition-all duration-500 flex-shrink-0">
+      <img src={logo} alt="Cellulouse Bakehouse Logo" className="w-full h-full object-cover rounded-full" />
       </div>
-</a>
+      </a>
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-10">
@@ -77,14 +77,26 @@ function Header() {
               <span className="absolute -bottom-1 left-0 w-0 h-px bg-[#f0d9b5] group-hover:w-full transition-all duration-500" />
             </a>
           ))}
-          <a
-            href="tel:+919876543210"
+          {/* <a
+            href="tel:+918886004280"
             className="flex items-center gap-2 px-6 py-3 border border-[#f0d9b5]/60 rounded-full text-[11px] tracking-[0.15em] uppercase text-[#f0d9b5] hover:bg-[#f0d9b5] hover:text-[#18342f] hover:border-[#f0d9b5] transition-all duration-500"
           >
             <Phone className="w-3 h-3" />
             Order Now
-          </a>
+          </a> */}
         </nav>
+
+           {/* Mobile Order Button
+        
+         <a href="https://api.whatsapp.com/send/?phone=918886004280"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="md:hidden flex items-center gap-2 px-4 py-2 border border-[#f0d9b5]/60 rounded-full text-[10px] tracking-[0.15em] uppercase text-[#f0d9b5]"
+        >
+          <Phone className="w-3 h-3" />
+          Order
+        </a> */}
+
       </div>
     </header>
   );
